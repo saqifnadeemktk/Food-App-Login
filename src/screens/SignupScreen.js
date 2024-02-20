@@ -142,6 +142,21 @@ export const SignupScreen = ({ navigation }) => {
         />
       </View>
       {/* password end */}
+
+      <Text style={{color:'gray', fontSize: 20}}>Please Enter the Address</Text>
+     <View style={styles.txtInputout}>
+      <TextInput
+        style={styles.txtInput}
+        placeholder="Address"
+        onFocus={() => {
+          setNameFocus(false);
+          setPhoneFocus(false);
+          setEmailFocus(false);
+          setcPasswordFocus(false);
+          setPasswordFocus(false);
+        }}
+        />
+      </View>
       <View style={styles.btn}>
         <TouchableOpacity>
           <Text style={styles.btntxt}>Sign up</Text>

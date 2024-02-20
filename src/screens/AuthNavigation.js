@@ -4,6 +4,7 @@ import { WelcomeScreen } from "./WelcomeScreen";
 import { LoginScreen } from "./LoginScreen";
  import {SignupScreen} from "./SignupScreen";
 import { NavigationContainer } from "@react-navigation/native";
+import Home from "../Home";
 // import { NavigationContainer } from "@react-navigation/native";
 
 const Stack = createNativeStackNavigator();
@@ -19,6 +20,9 @@ export const AuthNavigation = () => {
         {headerShown: false}
       }/>
         <Stack.Screen name="signup" component={SignupScreen} options={
+            {headerShown: false}
+        }/>
+        <Stack.Screen name="home" component={Home} options={
             {headerShown: false}
         }/>
     </Stack.Navigator>

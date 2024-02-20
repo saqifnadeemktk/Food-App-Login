@@ -17,7 +17,7 @@ export const LoginScreen = ({ navigation }) => {
   const [showPassword, setShowPassword] = useState(false);
 
   return (
-     <ScrollView>
+    <ScrollView>
       <View style={styles.container}>
         <Text style={styles.txt}>Sign In</Text>
         {/* <View style={styles.inputmain}> */}
@@ -61,8 +61,9 @@ export const LoginScreen = ({ navigation }) => {
             }}
           />
         </View>
+
         <View style={styles.btn}>
-          <TouchableOpacity>
+          <TouchableOpacity onPress={()=>navigation.navigate('home')}>
             <Text style={styles.btntxt}>Sign In</Text>
           </TouchableOpacity>
         </View>
@@ -119,7 +120,7 @@ export const LoginScreen = ({ navigation }) => {
           Sign Up
         </Text>
       </View>
-     </ScrollView>
+    </ScrollView>
   );
 };
 
@@ -127,8 +128,8 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     width: "100%",
-    paddingTop: '40%',
-   // height: "100%",
+    paddingTop: "41%",
+     height: "100%",
     alignItems: "center",
     justifyContent: "center",
     backgroundColor: "#d4e395",
